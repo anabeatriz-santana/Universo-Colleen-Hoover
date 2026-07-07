@@ -1,0 +1,147 @@
+/* Paleta de Cores:
+   Fundo: #FDF8F5 (Creme suave)
+   Texto Principal: #3C3633 (Cinza escuro/quente)
+   Destaque Principal (Header/Links): #D8A7B1 (Rosa delicado)
+   Fundo dos Cards: #FFFFFF (Branco)
+   Sombra: #E0E0E0 (Cinza claro)
+*/
+
+/* Reset básico e fontes */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: #FDF8F5;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/sakura.png');
+    color: #3C3633;
+    line-height: 1.6;
+}
+
+/* --- Cabeçalho --- */
+header {
+    background-color: #D8A7B1;
+    color: white;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header div {
+    margin-top: 1rem;
+}
+
+#caixa-busca {
+    padding: 0.75rem;
+    width: 300px;
+    max-width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#caixa-busca:focus {
+    outline: none;
+    border-color: #FDF8F5;
+    box-shadow: 0 0 8px rgba(253, 248, 245, 0.5);
+}
+
+/* Botão de busca foi removido do HTML, então não precisa de estilo. */
+
+/* --- Conteúdo Principal (Cards) --- */
+main {
+    padding: 2rem 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px burdensome rgba(0, 0, 0, 0.12);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.card .genero {
+    font-size: 0.9rem;
+    color: #D8A7B1;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #D8A7B1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* --- Rodapé --- */
+.footer {
+    background-color: #3C3633;
+    color: #FDF8F5;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.autora-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.autora-info h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.footer-links a {
+    color: #FDF8F5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
